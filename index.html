@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="main">
+        <h1>Music Player</h1>
+        <div class="music-container">
+            <div class="top">
+                <button  onclick="sidebar()"><i class="fa fa-chevron-right"></i></button>
+                <div class="lists">
+                    <button id="reload"><i class="fas fa-sync-alt"></i></button>
+                  
+                    <button class="volume" onclick="handleVolume()"><i class="fas fa-volume-up"></i></button>
+                    <!-- <button><i class="fa fa-pencil"></i></button> -->
+                </div>
+                <button onclick="open2()" id="change_playlist"><i class="fas fa-music"></i></button>
+            </div>
+
+            <div class="volume-box">
+                <span class="volume-down"><i class="fas fa-minus"></i></span>
+                <input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+                    oninput="music.volume = this.value/100">
+                <span class="volume-up"><i class="fas fa-plus"></i></span>
+            </div>
+            
+  
+          
+
+
+
+           
+            <h2 id="title">Lungi Dance</h2>
+            <h3 id="artist">Yo Yo Honey Singh</h3>
+           <div class="container">
+            <img src="images/1.jpg">
+           </div>
+           <audio src="songs/1.mp3" ></audio>
+           <div class="progressbar" id="progress-container">
+            <div class="duration">
+                <div id="current-time">0:00</div>
+                <div id="duration"></div>
+            </div>
+            <div class="progress-div" id="progress-div">
+                <div class="progress" id="progress"></div>
+            </div>
+
+          </div>
+         <div class="control">
+            <div class="music-control">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main-button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+         </div>
+
+          
+          
+
+
+           <div class="playlist">
+              
+           </div>
+
+
+           
+
+        </div>
+       
+    </div>
+    <script src="java.js"></script>
+    <script src="data.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+
+
+
+</body>
+</html>
